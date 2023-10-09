@@ -1,4 +1,4 @@
-#include "University.h"
+ï»¿#include "University.h"
 
 
 University::University(string n, string a , string f) {
@@ -9,19 +9,19 @@ University::University(string n, string a , string f) {
 
 
 void University::InputUniversity() {
-	cout << "Ââåäèòå íàçâàíèå óíèâåðñèòåòà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚Ð°: ";
 	cin >> nameUn;
 
-	cout << "Ââåäèòå àäðåññ óíèâåðñèòåòà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ð´Ñ€ÐµÑÑ ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚Ð°: ";
 	cin >> addresUn;
 
-	cout << "Ââåäèòå ôàêóëüòåò: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°ÐºÑƒÐ»ÑŒÑ‚ÐµÑ‚: ";
 	cin >> facultyUn;
 }
 void University::PrintUniversity() {
-	cout << "Íàçâàíèå óíèâåðñèòåòà: " << nameUn << endl;
-	cout << "Àäðåñ óíèâåðñèòåòà: " << addresUn << endl;
-	cout << "Ôàêóëüòåò: " << facultyUn << endl;
+	cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚Ð°: " << nameUn << endl;
+	cout << "ÐÐ´Ñ€ÐµÑ ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚Ð°: " << addresUn << endl;
+	cout << "Ð¤Ð°ÐºÑƒÐ»ÑŒÑ‚ÐµÑ‚: " << facultyUn << endl;
 }
 
 

@@ -1,4 +1,4 @@
-#include "Human.h"
+ï»¿#include "Human.h"
 
 Human::Human(string n, int a) {
 	name = n;
@@ -6,15 +6,15 @@ Human::Human(string n, int a) {
 }
 
 void Human::InputHuman() {
-	cout << "Ââåäèòå èìÿ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ: ";
 	cin >> name;
 
-	cout << "Ââåäèòå âîçðàñò: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚: ";
 	cin >> age;
 }
 void Human::PrintHuman() {
-	cout << "Èìÿ: " << name << endl;
-	cout << "Âîçðàñò: " << age << endl;
+	cout << "Ð˜Ð¼Ñ: " << name << endl;
+	cout << "Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚: " << age << endl;
 }
 
 

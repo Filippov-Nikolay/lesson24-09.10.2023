@@ -1,4 +1,4 @@
-#include "Student.h"
+ï»¿#include "Student.h"
 
 Student::Student(string name, int age, string nameUn, string addresUn, string facultyUn, string g, int nor, int* ats):
 	Human(name, age), 
@@ -15,25 +15,25 @@ Student::~Student() {
 }
 
 void Student::InputStudent() {
-	cout << "Ââåäèòå ãðóïïó: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ: ";
 	cin >> group;
 
-	cout << "Ââåäèòå êîë-âî îöåíîê: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ð¾Ñ†ÐµÐ½Ð¾Ðº: ";
 	cin >> numberOfRatings;
 
-	cout << "Îöåíêè:" << endl;
+	cout << "ÐžÑ†ÐµÐ½ÐºÐ¸:" << endl;
 
 	assessments = new int[numberOfRatings];
 
 	for (int i = 0; i < numberOfRatings; i++) {
-		cout << "Ââåäèòå " << i + 1 << "þ îöåíêó: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i + 1 << "ÑŽ Ð¾Ñ†ÐµÐ½ÐºÑƒ: ";
 		cin >> assessments[i];
 	}
 }
 
 void Student::PrintStudent() {
-	cout << "Ãðóïïà: " << group << endl;
-	cout << "Êîë-âî îöåíîê: " << numberOfRatings << endl;
+	cout << "Ð“Ñ€ÑƒÐ¿Ð¿Ð°: " << group << endl;
+	cout << "ÐšÐ¾Ð»-Ð²Ð¾ Ð¾Ñ†ÐµÐ½Ð¾Ðº: " << numberOfRatings << endl;
 	
 	for (int i = 0; i < numberOfRatings; i++)
 		cout << assessments[i] << endl;
@@ -47,6 +47,4 @@ int* Student::GetAssessments() const { return assessments; }
 
 void Student::SetGroup(string g) { group = g; }
 void Student::SetNumberOfRatings(int n) { numberOfRatings = n; }
-void Student::SetAssessments(int* a) { 
-	assessments = a; 
-}
+void Student::SetAssessments(int* a) { assessments = a; }
